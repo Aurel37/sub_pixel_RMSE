@@ -16,7 +16,7 @@ def upper_bound(t, mu, K, sigma, sigma_prime):
             Delta = 1
         # upper bund computed in the article of Simon et al.
         upper_bound = (np.sin(np.pi*t)/np.pi)**2*((mu**2 + 4*sigma**2)*(1/(delta + 1/2) + 1/(Delta+1/2))**2 + 2*sigma_prime**2*(1/delta + 1/Delta))
-    return upper_bound
+    return np.sqrt(upper_bound)
 
 
 

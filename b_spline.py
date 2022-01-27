@@ -1,5 +1,6 @@
 from scipy.interpolate import BSpline
 from shannon import shannon_interpolation
+import numpy as np
 
 def b_spline_interpolation(image, i, t):
     """bicubique interpolaton of the image on the row  i
@@ -16,4 +17,4 @@ def ground_truth_error_spline(X_gd, X_h, t):
     n,m = X_gd.shape
     for i in range(n):
         res += ((shannon_interpolation(X_gd, i, t) - b_spline_interpolation(X_h, i, t)))**2
-    return res/n
+    return np.sqrt(res/n)

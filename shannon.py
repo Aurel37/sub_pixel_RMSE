@@ -22,4 +22,4 @@ def ground_truth_error(X_gd, X_h, t):
     n,m = X_gd.shape
     for i in range(n):
         res += ((shannon_interpolation(X_gd, i, t) - shannon_interpolation(X_h, i, t)))**2
-    return res/n
+    return np.sqrt(res/n)
