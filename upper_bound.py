@@ -3,6 +3,8 @@ from scipy import interpolate
 from shannon import sinc
 
 def upper_bound(t, mu, K, sigma, sigma_prime):
+    """Compute the upper bound of the RMSE
+    """
     upper_bound = 0
     if t != 0:
         delta = min(K+1/2 - t, K+1/2+t)
@@ -17,6 +19,8 @@ def upper_bound(t, mu, K, sigma, sigma_prime):
 
 
 def enveloppe_cal(curve, t):
+    """Retrieve the upper enveloppe of a curve
+    """
     time = [t[0]]
     pics = [curve[0]]
     n = len(curve)

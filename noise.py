@@ -1,6 +1,9 @@
 import numpy as np
 
 def add_noise(n,m, sigma):
+    """Create a gaussian noise to be added 
+    to a picture
+    """
     noisy_image = np.zeros((n,m))
     
     mini = np.inf

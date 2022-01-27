@@ -1,5 +1,9 @@
 import numpy as np
 
+# computation of the statistics given in the article 
+# Loïc Simon and Jean-Michel Morel. Influence of Unknown Exterior Samples on Interpolated Valuesfor Band-Limited Images.SIAM Journal on Imaging Sciences, 9(1) :152–184, 2016.
+# page 17
+
 def phi(X):
     n, m = X.shape
     DFT_X = None
