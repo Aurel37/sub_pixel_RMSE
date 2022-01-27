@@ -5,7 +5,6 @@ def b_spline_interpolation(image, i, t):
     """bicubique interpolaton of the image on the row  i
     """
     n, m = image.shape
-    X_tilde_it = 0
     spl = BSpline([i for i in range(m)], image[i][:], 3)
     return spl(t)
 

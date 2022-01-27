@@ -6,9 +6,10 @@ def kron(image, lbda):
     """
     n, m = image.shape
     resize = np.zeros((n//lbda, m//lbda))
+    # take a pixel every lbda
     for i in range(n//lbda):
         for j in range(m//lbda):
             resize[i][j] = image[i*lbda][j*lbda]
+    # kron operator
     res = np.kron(resize, np.ones((lbda, lbda)))
-    print(res.shape)
     return res[0:n, 0:m]
