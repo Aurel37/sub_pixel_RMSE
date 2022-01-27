@@ -6,7 +6,7 @@
 
 To run the code :
 - create a virtual environment
-- run ```python install -r requirements.txt````
+- run ``python install -r requirements.txt``
 
 ### Run the code on Google Colab (recommanded)
 
@@ -14,4 +14,4 @@ Simply changed the persistent_storage variable in the jupyter notebook.
 
 ## Experiments
 
-All the experiments are done in the jupyter notebook __project_sub_pixel.ipynb__.  
+All the experiments are done in the jupyter notebook _project_sub_pixel.ipynb_.  
